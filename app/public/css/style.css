@@ -1,6 +1,49 @@
+body, html {
+	height: 100%;
+ }
+
+ h1{
+ 	font-family: 'Roboto Mono', monospace;
+ }
+
+.white{
+	color: white;
+}
+
+.show-border { 
+	border: 2px dashed red;
+}
+
+.blue{
+	background-color: blue;
+}
+
 .fullScreen{
 	height: 100%;
 	width: 100%;
-	background-color: #000000;
-	color: white;
+	background-color: green;
+	color: green;
+}
+
+.backgroundImage{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.centerChildren{
+	margin: auto;
+	width: 75%;
+}
+
+
+.verticalCenter{
+	margin-left: auto;
+ 	margin-right: auto;
+  	position: relative;
+	top: 50%;
+}
+
+.spacer{
+	height: 25px;
 }

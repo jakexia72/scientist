@@ -4,15 +4,55 @@ body, html {
 
  h1{
  	font-family: 'Roboto Mono', monospace;
+ 	font-weight: 700;
  }
+
+ h2{
+ 	font-family: 'Roboto Mono', monospace;
+ 	font-weight: 300;
+ 	font-style: italic;
+ }
+
+ #mainButton{
+	background-color: transparent;
+	border: 4px;
+	border-style: solid;
+	border-color: white;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.buttonBG{
+	width: 0px;
+	height: 70px;
+	background-color: white;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+#mainButton:hover{
+	background-color: transparent;
+	color: blue;
+}
+
+.buttonWrapper:hover .buttonBG{
+	width: 100%;
+	max-width: 500px;
+	width: 100px;
+}
 
 .white{
 	color: white;
 }
 
-.show-border { 
-	border: 2px dashed red;
-}
+
 
 .blue{
 	background-color: blue;
@@ -41,9 +81,9 @@ body, html {
 	margin-left: auto;
  	margin-right: auto;
   	position: relative;
-	top: 50%;
+	top: 45%;
 }
 
 .spacer{
-	height: 25px;
-}
+	height: 20px;
+

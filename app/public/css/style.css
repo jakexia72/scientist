@@ -48,6 +48,24 @@ body, html {
 	color: blue;
 }
 
+#bigBlue{
+	width: 50%;
+	-webkit-transition: width 7s ease !important;
+	-moz-transition: all .7s ease !important;
+	-o-transition: all .7s ease !important;
+	-ms-transition: all .7s ease !important;
+	transition: all .7s ease !important;
+}
+
+#toBeRemoved{
+width: 50%;
+	-webkit-transition: width .7s ease !important;
+	-moz-transition: all .7s ease !important;
+	-o-transition: all .7s ease !important;
+	-ms-transition: all .7s ease !important;
+	transition: all .7s ease !important;
+}
+
 .buttonWrapper:hover .buttonBG{
 	width: 122px;
 }
@@ -57,6 +75,11 @@ body, html {
 }
 
 .blue{
+	-webkit-transition: all .3s ease !important;
+	-moz-transition: all .3s ease !important;
+	-o-transition: all .3s ease !important;
+	-ms-transition: all .3s ease !important;
+	transition: all .3s ease !important;
 	background-color: blue;
 }
 

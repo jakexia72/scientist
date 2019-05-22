@@ -30,6 +30,23 @@ $(document).ready(function () {
   		}	
   	}
 
+	
+	var bg = document.getElementById('bigBlue');
+  	function exitMainPage(){
+  		//bg.style.width = '5000px';
+  		
+  		bg.classList.remove('col-sm-5');
+  		document.getElementById("toBeRemoved").classList.remove('col-sm-7');
+  		
+  		//document.getElementById("toBeRemoved").remove();
+  		document.getElementById("toBeRemoved").style.width = "0px";
+  		bg.style.width = "100%";
+  		document.getElementById("mButtonWrapper").remove();
+  		console.log("clicked");
+  		console.log(window.innerWidth);
+  		bg.style.height = "50%";
+  	}
+	document.getElementById("mainButton").onclick = function() {exitMainPage()};
 
 
 

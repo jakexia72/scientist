@@ -32,19 +32,22 @@ $(document).ready(function () {
 
 	
 	var bg = document.getElementById('bigBlue');
+	var rm = document.getElementById('toBeRemoved');
   	function exitMainPage(){
   		//bg.style.width = '5000px';
   		
   		bg.classList.remove('col-sm-5');
-  		document.getElementById("toBeRemoved").classList.remove('col-sm-7');
+  		rm.classList.remove('col-sm-7');
   		
   		//document.getElementById("toBeRemoved").remove();
-  		document.getElementById("toBeRemoved").style.width = "0px";
+  		rm.style.width = "0px";
   		bg.style.width = "100%";
   		document.getElementById("mButtonWrapper").remove();
-  		console.log("clicked");
-  		console.log(window.innerWidth);
-  		bg.style.height = "50%";
+  		//bg.style.height = "50%";
+
+  		document.getElementById("firstRow").style.height = "30%";
+  		document.getElementById('secondPage').style.display = "block";
+
   	}
 	document.getElementById("mainButton").onclick = function() {exitMainPage()};
 

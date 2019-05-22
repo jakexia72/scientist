@@ -57,6 +57,14 @@ body, html {
 	transition: all .7s ease !important;
 }
 
+#firstRow{
+	-webkit-transition: width 7s ease !important;
+	-moz-transition: all .7s ease !important;
+	-o-transition: all .7s ease !important;
+	-ms-transition: all .7s ease !important;
+	transition: all .7s ease !important;
+}
+
 #toBeRemoved{
 width: 50%;
 	-webkit-transition: width .7s ease !important;
@@ -75,12 +83,11 @@ width: 50%;
 }
 
 .blue{
-	-webkit-transition: all .3s ease !important;
-	-moz-transition: all .3s ease !important;
-	-o-transition: all .3s ease !important;
-	-ms-transition: all .3s ease !important;
-	transition: all .3s ease !important;
 	background-color: blue;
+}
+
+.grey{
+	color: grey;
 }
 
 .fullScreen{
@@ -109,6 +116,51 @@ width: 50%;
 	top: 45%;
 }
 
+.verticalParent{
+	 -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.verticalChild{
+	 position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .spacer{
 	height: 20px;
+}
+
+.alignRight{
+	float: right;
+	position: relative;
+	margin-right: 10px;
+}
+.alignLeft{
+	float: left;
+	position: relative;
+	margin-left: 10px;
+}
+
+.smallGrey{
+	color: grey;
+	font-size: 20px !important;
+}
+
+.giantText{
+	font-size: 2.2em; 
+	font-weight: 300;
+ 	font-style: italic;
+}
+
+.oneColumnMargin{
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }

@@ -13,6 +13,10 @@ body, html {
  	font-style: italic;
  }
 
+ .buttonWrapper{
+ 	position: relative;
+ }
+
  #mainButton{
 	background-color: transparent;
 	border: 4px;
@@ -24,17 +28,19 @@ body, html {
 	display: block;
 	cursor: pointer;
 	text-decoration: none;
+	position: absolute;
 }
 
 .buttonBG{
 	width: 0px;
-	height: 70px;
+	height: 62px;
 	background-color: white;
 	-webkit-transition: .3s ease;
 	-moz-transition: .3s ease;
 	-o-transition: .3s ease;
 	-ms-transition: .3s ease;
 	transition: .3s ease;
+	position: absolute;
 }
 
 #mainButton:hover{
@@ -43,16 +49,12 @@ body, html {
 }
 
 .buttonWrapper:hover .buttonBG{
-	width: 100%;
-	max-width: 500px;
-	width: 100px;
+	width: 122px;
 }
 
 .white{
 	color: white;
 }
-
-
 
 .blue{
 	background-color: blue;
@@ -86,4 +88,4 @@ body, html {
 
 .spacer{
 	height: 20px;
-
+}

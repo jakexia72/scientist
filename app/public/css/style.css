@@ -1,23 +1,23 @@
 body, html {
 	height: 100%;
- }
+}
 
- h1{
- 	font-family: 'Roboto Mono', monospace;
- 	font-weight: 700;
- }
+h1{
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+}
 
- h2{
- 	font-family: 'Roboto Mono', monospace;
- 	font-weight: 300;
- 	font-style: italic;
- }
+h2{
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300;
+	font-style: italic;
+}
 
- .buttonWrapper{
- 	position: relative;
- }
+.buttonWrapper{
+	position: relative;
+}
 
- #mainButton{
+#mainButton{
 	background-color: transparent;
 	border: 4px;
 	border-style: solid;
@@ -29,6 +29,24 @@ body, html {
 	cursor: pointer;
 	text-decoration: none;
 	position: absolute;
+}
+
+
+
+.card{
+	margin: 11px;
+	border: 1px solid rgba(0,0,0,.0);
+	box-shadow: 0 0 11px rgba(33,33,33,.2);
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.card:hover{
+	box-shadow: 0 0 11px rgba(33,33,33,.5);
+	border: 1px solid blue;
 }
 
 .buttonBG{
@@ -66,7 +84,7 @@ body, html {
 }
 
 #toBeRemoved{
-width: 50%;
+	width: 50%;
 	-webkit-transition: width .7s ease !important;
 	-moz-transition: all .7s ease !important;
 	-o-transition: all .7s ease !important;
@@ -111,21 +129,25 @@ width: 50%;
 
 .verticalCenter{
 	margin-left: auto;
- 	margin-right: auto;
-  	position: relative;
+	margin-right: auto;
+	position: relative;
 	top: 45%;
 }
 
 .verticalParent{
-	 -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+#changingProfessions{
+	white-space: nowrap;
 }
 
 .verticalChild{
-	 position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .spacer{
@@ -151,7 +173,7 @@ width: 50%;
 .giantText{
 	font-size: 2.2em; 
 	font-weight: 300;
- 	font-style: italic;
+	font-style: italic;
 }
 
 .oneColumnMargin{
@@ -160,7 +182,33 @@ width: 50%;
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+
+	h2{
+		font-style: 16px;
+	}
+
+	.oneColumnMargin{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.giantText{
+		font-size: 1.4em;
+	}
+
+	p{
+		font-size: 12px;
+	}
+	#bigBlue{
+		width: 100%;
+	}
+
+	#changingProfessions{
+		font-size: 25px;
+	}
+
+	#toBeRemoved{
+		display: none;
+		width: 0;
+	}
 }

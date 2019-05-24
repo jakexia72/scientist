@@ -17,6 +17,23 @@ h2{
 	position: relative;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+   -webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+a:hover{
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    
+}
+
 #mainButton{
 	background-color: transparent;
 	border: 4px;
@@ -163,9 +180,6 @@ h2{
 	float: left;
 	position: relative;
 	margin-left: 10px;
-}
-.freeze{
-    position: static;
 }
 
 .smallGrey{

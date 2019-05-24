@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    
+        
     
 
 	//Animated description of turing's porfessions
@@ -57,7 +57,10 @@ $(document).ready(function () {
 
     $(document).on('scroll', function() {
         if($(this).scrollTop()>=$('#refreshAOS').position().top){
+        AOS.init({once:true}); // remove '{once:true}' for continuous animation
         AOS.refresh();
+        AOS.refreshHard();
+        //AOS.once = true;
     }
     });
 

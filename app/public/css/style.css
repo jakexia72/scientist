@@ -197,6 +197,33 @@ a:hover{
 	margin-left: 15%;
 	margin-right: 15%;
 }
+.masonry { /* Masonry container */
+  column-count: 2;
+  column-gap: 1em;
+    
+}
+
+.item { /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+    
+  margin: 0 0 1em;
+  width: 100%;
+	border: 2px solid rgba(0,0,0,.0);
+	box-shadow: 0 0 11px rgba(33,33,33,.2);
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+.card-img{
+    border-radius: 0px;
+}
+.item:hover{
+	box-shadow: 0 0 11px rgba(33,33,33,.5);
+	border: 2px solid blue;
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -214,7 +241,7 @@ a:hover{
 	}
 
 	p{
-		font-size: 12px;
+		font-size: 1em;
 	}
 	#bigBlue{
 		width: 100%;
@@ -228,4 +255,8 @@ a:hover{
 		display: none;
 		width: 0;
 	}
+    .masonry { /* Masonry container */
+  column-count: 1;
+  column-gap: 1em;
+}
 }

@@ -164,6 +164,9 @@ h2{
 	position: relative;
 	margin-left: 10px;
 }
+.freeze{
+    position: static;
+}
 
 .smallGrey{
 	color: grey;

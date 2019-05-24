@@ -1,6 +1,7 @@
 
 $(document).ready(function () {
-	
+    
+    
 
 	//Animated description of turing's porfessions
 	var professions = ['Mathematician', 'Inventor', 'Computer Scientist', 'Logician', 'Cryptanalyst', 'Philospher'];
@@ -47,12 +48,20 @@ $(document).ready(function () {
 
   		document.getElementById("firstRow").style.height = "30%";
   		document.getElementById('secondPage').style.display = "block";
+        
+        //AOS.refresh();
+	
 
   	}
 	document.getElementById("mainButton").onclick = function() {exitMainPage()};
 
+    $(document).on('scroll', function() {
+        if($(this).scrollTop()>=$('#refreshAOS').position().top){
+        AOS.refresh();
+    }
+    });
 
-
+    
 
 });
 
